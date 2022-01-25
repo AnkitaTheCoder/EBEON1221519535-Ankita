@@ -1,0 +1,20 @@
+5.Find the output and write explanation ?
+
+Answer:
+class Main 
+{
+	public static void main(String[] args) 
+	{
+		int t;
+		System.out.println("Value of variable t:"+t);
+	}
+}
+
+Output:
+error: variable t might not have been initialized
+                System.out.println("Value of variable t:"+t);
+
+
+Output: 
+error: Variable t might not have been initialized
+    here no any return value it only print"value of variable t"
