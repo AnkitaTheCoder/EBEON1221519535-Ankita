@@ -1,0 +1,66 @@
+2. Concept of method implimentation
+Write a program to create 'Square' and 'Rectangle' class.
+   i.Impliments method to calculate area and perimeter of square and rectangles.
+     These two methods are going to take side as argument in square and length and breadth in case of rectangle.
+   ii.Create a 'MainClass' in which define main method in which create two object for each square and Rectangle class,
+      now calculate then show area and perimeter in the console after providing appropriate values for side, length & breadth using methods of these classes.
+
+Answre:
+package methods;
+
+class Square 
+{
+	int side;
+	float area,perimeter;
+	void area(int side)
+	{
+		this.side=side;
+		area=side*side;
+		System.out.println("Area of square: "+area);
+	}
+	void perimeter(int side)
+	{
+		this.side=side;
+		perimeter=4*side;
+		System.out.println("perimeter of square: "+perimeter);
+	}
+}
+class rectangle
+{
+	int length,breadth;
+	float area,perimeter;
+	void area(int length,int breadth)
+	{
+		this.breadth=breadth;
+		this.length=length;
+		area=length*breadth;
+		System.out.println("Area of Rectangle: "+area);
+	}
+	void perimeter(int length,int breadth)
+	{
+		this.length=length;
+		this.breadth=breadth;
+		perimeter=2*(length+breadth);
+		System.out.println("Perimeter of Rectangle: "+perimeter);
+	}
+}
+public class MethodImplimentation {
+
+	public static void main(String[]args){
+		Square a= new Square();
+		a.area(2);
+		a.perimeter(12);
+
+		rectangle b= new rectangle();
+		b.area(20,4);
+		b.perimeter(3,4);
+}
+	
+}
+
+
+Output:
+Area of square: 4.0
+Perimeter of Square: 48.0
+Area of Rectangle: 80.0
+Perimeter of Rectangle: 14.0
