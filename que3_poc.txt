@@ -1,0 +1,39 @@
+3. Initialize On object Creation
+i.Create a class Car which contains wheels and model as Instance variables.
+ii.Initialize the number of the car to the model variable and print the model after creating the object of the car class(not at the time of creating the object).
+
+Answer:
+package methods;
+
+class car
+{
+	int wheels;
+	String model;
+	car (int wheels)
+	{
+		this.wheels=wheels;
+}  
+String modelname(String model)
+{
+	return model;
+}
+void print()
+	{
+	System.out.println("Wheels: "+wheels);
+	}
+}
+
+public class ObjectCreation{
+
+	public static void main(String[] args) 
+	{
+		car c= new car(4);
+		System.out.println("Model Name: "+c.modelname("abc"));
+		c.print();
+	}
+}
+
+
+Output:
+Model1 Name: abc
+Wheels: 4
